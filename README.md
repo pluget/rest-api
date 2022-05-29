@@ -60,7 +60,7 @@
 
 ### Design (API endpoints)
 
-#### https://pluget.com/api/v1
+#### https://pluget.net/api/v1
 - Description: The main url to access the REST-API.
 
 #### /all
@@ -72,10 +72,10 @@
 #### /find
 - Description: Returns an array containing only the objects that match the query.
 - Examples:
-  - https://pluget.com/api/v1/find?author=queryString 
-  - https://pluget.com/api/v1/find?name=queryString
-  - https://pluget.com/api/v1/find?pgid=queryString
-  - https://pluget.com/api/v1/find?name=queryString&author=queryString
+  - https://pluget.net/api/v1/find?author=queryString 
+  - https://pluget.net/api/v1/find?name=queryString
+  - https://pluget.net/api/v1/find?pgid=queryString
+  - https://pluget.net/api/v1/find?name=queryString&author=queryString
 - Required params (at least one): author, name, pgid
 
 # TODO:
