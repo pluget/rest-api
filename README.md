@@ -65,7 +65,7 @@
 
 #### /all
 - Description: Returns all the data. One page could show a maximum of 20 plugins for example.
-- Example: https://pluget.com/api/v1/all?pageID=0&pagesShown=5
+- Example: https://pluget.net/api/v1/all?pageID=0&pagesShown=5
 - Required params: pageID, pagesShown
 - Optional params:
 
