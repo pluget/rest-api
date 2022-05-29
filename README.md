@@ -1,4 +1,64 @@
-# rustapi
+# rest-api
+
+### Design
+`name.json`
+```json
+  "name_of_plugin": 2137 // name: pgid
+```
+
+`data.json`
+```json
+  2137: {
+    "name": "Full name of plugin",
+    "icon": "99999AF", // icon: cid
+    "license": "GPL-3.0-or-later", // license: spdx
+    "archived": false,
+    "gitUrl": "https://github.com/mbledkowski/name_of_plugin.git",
+    "description": "The best plugin in the entire world", // description: short description
+    "data": [{
+      "id": "213769", // if other than spigot/bukkit then optional
+      "type": "spigot",
+      "url": "https://spigotmc.org/resources/213769",
+      "name": "Full name of plugin - The best plugin in the fing world", // optional
+      "description": "The best plugin in the world. Download right now.", // optional
+      "archived": false, // optional for custom websites
+      "author": "Slayer420", // optional for custom websites
+      "icon": "666FFF", // optional, icon: cid
+      "numberOfDownloads": 2115, // optional for other than spigot/bukkit
+      "releasesPageUrl": "https://spigotmc.org/resources/213769/releases" // optional for custom
+    }, {
+      "type": "github",
+      "url": "https://github.com/mbledkowski/name_of_plugin",
+      "archived" false,
+      "author": "mbledkowski",
+      "releasesPageUrl": "https://github.com/mbledkowski/name_of_plugin/releases"
+    }]
+  }
+```
+
+`versions.json`
+```json
+  2137: [
+    "2.1.3.7": {
+      "about": [{
+        "type": "github",
+        "sourceUrl": "https://github.com/mbledkowski/name_of_plugin/releases/2137",
+        "downloadUrl": "https://github.com/mbledkowski/name_of_plugin/releases/2137/plugin.jar",
+      }, {
+        "type": "spigot",
+        "sourceUrl": "https://spigotmc.org/resources/213769/releases/2137",
+        "downloadUrl": "https://spigotmc.org/resources/213769/releases/2137/plugin.jar",
+        "rating": 2, // scale 0-10
+        "downloads": 5000,
+      }],
+      "cid": "777AAA",
+      "supportedApis": ["spigot", "paper", "glowkit"],
+      "dependencies": ["essentialsx-core"]
+    }
+  ]
+```
+
+# TODO:
 
 [![Tests](https://github.com/ndelvalle/rustapi/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/ndelvalle/rustapi/actions/workflows/ci.yml)
 
