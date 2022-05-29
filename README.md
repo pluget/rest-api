@@ -2,12 +2,12 @@
 
 ### Design
 `name.json`
-```json
+```jsonc
   "name_of_plugin": 2137 // name: pgid
 ```
 
 `data.json`
-```json
+```jsonc
   2137: {
     "name": "Full name of plugin",
     "icon": "99999AF", // icon: cid
@@ -37,7 +37,7 @@
 ```
 
 `versions.json`
-```json
+```jsonc
   2137: [
     "2.1.3.7": {
       "about": [{
