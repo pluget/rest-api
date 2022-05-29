@@ -1,6 +1,6 @@
 # rest-api
 
-### Design
+### Design (DB structure)
 `name.json`
 ```jsonc
   "name_of_plugin": 2137 // name: pgid
@@ -57,6 +57,26 @@
     }
   ]
 ```
+
+### Design (API endpoints)
+
+#### https://pluget.com/api/v1
+- Description: The main url to access the REST-API.
+
+#### /all
+- Description: Returns all the data. One page could show a maximum of 20 plugins for example.
+- Example: https://pluget.com/api/v1/all?pageID=0&pagesShown=5
+- Required params: pageID, pagesShown
+- Optional params:
+
+#### /find
+- Description: Returns an array containing only the objects that match the query.
+- Examples:
+  - https://pluget.com/api/v1/find?author=queryString 
+  - https://pluget.com/api/v1/find?name=queryString
+  - https://pluget.com/api/v1/find?pgid=queryString
+  - https://pluget.com/api/v1/find?name=queryString&author=queryString
+- Required params (at least one): author, name, pgid
 
 # TODO:
 
