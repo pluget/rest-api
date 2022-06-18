@@ -113,32 +113,31 @@ It uses [MongoDB](https://docs.mongodb.com/) database and [Rocket](https://githu
 ```bash
 ├── Cargo.toml
 ├── README.md
-├── config
-│   ├── default.json    # Default configuration
-│   └── production.json # Production configuration (Overwrites the default)
-├── rustfmt.toml
+├── Rocket.toml
 └── src
-    ├── context.rs      # Shared state and functionality across the APP
-    ├── database.rs
-    ├── errors.rs
-    ├── lib             # Helpers not related to the business model
-    │   ├── authenticate_request.rs
-    │   ├── date.rs
+    ├── db
+    │   ├── customer.rs
+    │   └── mod.rs
+    ├── errors
     │   ├── mod.rs
-    │   ├── models.rs   # Base Database Model trait
-    │   ├── to_object_id.rs
-    │   └── token.rs
-    ├── logger.rs
+    │   └── response.rs
+    ├── fairings
+    │   ├── cors.rs
+    │   ├── counter.rs
+    │   └── mod.rs
     ├── main.rs
     ├── models
-    │   ├── cat.rs
+    │   ├── customer.rs
     │   ├── mod.rs
-    │   └── user.rs
+    │   └── response.rs
+    ├── request_guards
+    │   ├── basic.rs
+    │   └── mod.rs
     ├── routes
-    │   ├── cat.rs
-    │   ├── mod.rs
-    │   └── user.rs
-    └── settings.rs
+    │   ├── customer.rs
+    │   └── mod.rs
+    └── tests
+        └── mod.rs
 ```
 
 ## Contributing
