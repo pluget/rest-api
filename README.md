@@ -81,20 +81,8 @@
 ### Requirements
 
 - [Rust](https://www.rust-lang.org/tools/install)
-- [MongoDB](https://docs.mongodb.com/manual/installation/)
 
-It uses [MongoDB](https://docs.mongodb.com/) database and [Rocket](https://github.com/SergioBenitez/Rocket) HTTP framework.
-
-### 🚀 Features
-- Establish MongoDB connection using rocket Adhoc fairing.
-- Custom error handlings with rocket Responder and okapi OpenApiGenerator.
-- CORS fairing and Counter fairing to demonstrate how fairing works.
-- Example model Customer to demonstrate how Rust structs interact with MongoDB.
-- Request guard using ApiKey.
-- REST API endpoints with simple CRUD using Customer model.
-- Implement Open API documentation using okapi.
-- Test codes to test API endpoints.
-
+  It uses json files as a database and [Rocket](https://github.com/SergioBenitez/Rocket) HTTP framework.
 
 ### 🔧 Building and Testing
 
@@ -103,7 +91,6 @@ It uses [MongoDB](https://docs.mongodb.com/) database and [Rocket](https://githu
 
 #### release mode
 > cargo build --release && cargo run --release
-
 
 #### unit testing
 > cargo test
