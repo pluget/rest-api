@@ -16,7 +16,7 @@
     "gitUrl": "https://github.com/mbledkowski/name_of_plugin.git",
     "description": "The best plugin in the entire world", // description: short description
     "data": [{
-      "id": "213769", // if other than spigot/bukkit then optional
+      "id": 213769, // if other than spigot/bukkit then optional
       "type": "spigot",
       "url": "https://spigotmc.org/resources/213769",
       "name": "Full name of plugin - The best plugin in the fing world", // optional
