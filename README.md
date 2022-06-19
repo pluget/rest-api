@@ -27,6 +27,7 @@
       "iconUrl": "https://www.spigotmc.org/data/resource_icons/9/9089.jpg" // optional
       "numberOfDownloads": 2115, // optional for other than spigot/bukkit
       "rating": 2, // scale 0-10; optional for other than spigot/bukkit
+      "numberOfVotes": 500, // optional for other than spigot/bukkit
       "releasesPageUrl": "https://spigotmc.org/resources/213769/releases" // optional for custom
     }, {
       "type": "github",
