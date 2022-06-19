@@ -24,6 +24,7 @@
       "archived": false, // optional for custom websites
       "author": "Slayer420", // optional for custom websites
       "icon": "666FFF", // optional, icon: cid
+      "iconUrl": "https://www.spigotmc.org/data/resource_icons/9/9089.jpg"
       "numberOfDownloads": 2115, // optional for other than spigot/bukkit
       "releasesPageUrl": "https://spigotmc.org/resources/213769/releases" // optional for custom
     }, {
@@ -31,6 +32,7 @@
       "url": "https://github.com/mbledkowski/name_of_plugin",
       "archived" false,
       "author": "mbledkowski",
+      "numberOfStars": 1400, //optional for other than github/gitlab
       "releasesPageUrl": "https://github.com/mbledkowski/name_of_plugin/releases"
     }]
   }
