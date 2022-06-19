@@ -6,10 +6,24 @@
 - Description: The main url to access the REST-API.
 
 #### /all
-- Description: Returns all the data. One page could show a maximum of 20 plugins.
-- Example: https://api.pluget.net/v1/all?pageID=0&pagesShown=5
-- Required params: pageID, pagesShown
-- Optional params:
+- Description: Returns all the data (name, data, versions). One page could show a maximum of 20 plugins.
+- Example: https://api.pluget.net/v1/all?pageID=0&pluginsShown=5
+- Optional params: pageID (default 0), pluginsShown (max 20, default 10)
+
+#### /names
+- Description: Retuns all names.
+- Example: https://api.pluget.net/v1/names?pageID=0&pluginsShown=5
+- Optional params: pageID (default 0), pluginsShown (max 4294967295, default 1000)
+
+#### /data
+- Description: Returns all the plugins data (without versions). 
+- Example: https://api.pluget.net/v1/data?pageID=0&pluginsShown=5
+- Optional params: pageID (default 0), pluginsShown (max 20, default 10)
+
+#### /versions
+- Description: Return all the plugins versions (without data).
+- Example: https://api.pluget.net/v1/versions?pageID=0&pluginsShown=5
+- Optional params: pageID (default 0), pluginsShown (max 20, default 10)
 
 #### /find
 - Description: Returns an array containing only the objects that match the query.
@@ -24,7 +38,7 @@
 
 - [Rust](https://www.rust-lang.org/tools/install)
 
-  It uses json files as a database and [Rocket](https://github.com/SergioBenitez/Rocket) HTTP framework.
+It uses json files as a database [pluget/repository](https://github.com/pluget/repository) and [Rocket](https://github.com/SergioBenitez/Rocket) HTTP framework.
 
 ### 🔧 Building and Testing
 
