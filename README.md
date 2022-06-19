@@ -52,10 +52,11 @@
         "type": "spigot",
         "sourceUrl": "https://spigotmc.org/resources/213769/releases/2137",
         "downloadUrl": "https://spigotmc.org/resources/213769/releases/2137/plugin.jar",
-        "rating": 2, // scale 0-10
-        "downloads": 5000,
+        "numberOfDownloads": 5000,
+        "rating": 2, // scale 0-10, optional for other than spigot
+        "numberOfVotes": 500, // optional for other than spigot
       }],
-      "cid": "777AAA",
+      "cid": "777AAA", // optional for meta-packages (like EssentialsX)
       "supportedApis": ["spigot", "paper", "glowkit"],
       "dependencies": ["essentialsx-core"]
     }
